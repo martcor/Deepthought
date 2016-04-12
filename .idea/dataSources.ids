@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - tsupport@localhost" uuid="88274065-7e19-4603-9cc1-1544d4241940">
+    <database-info product="MySQL" version="5.5.5-10.0.17-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="tsupport"/>
+    <table name="Answersen" schema="" catalog="tsupport" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="250" scale="0" nullable="false" jdbcType="12"/>
+      <column name="content" sqlType="VARCHAR" precision="2000" scale="0" nullable="false" jdbcType="12"/>
+      <column name="operatingSystem" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="appVersion" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="answersOSen" columns="operatingSystem" ref-table="OperatingSystems" ref-schema="" ref-catalog="tsupport" ref-columns="operatingSystem" update-rule="0" delete-rule="0" deferrability="2"/>
+      <exported-key name="questionsAnswerAllen" table="Questionsen" schema="" catalog="tsupport" columns="answerAll"/>
+      <exported-key name="questionsAnswerAndroiden" table="Questionsen" schema="" catalog="tsupport" columns="answerAndroid"/>
+      <exported-key name="questionsAnswerDesktopen" table="Questionsen" schema="" catalog="tsupport" columns="answerDesktop"/>
+      <exported-key name="questionsAnswerIosen" table="Questionsen" schema="" catalog="tsupport" columns="answerIos"/>
+      <exported-key name="questionsAnswerOsxen" table="Questionsen" schema="" catalog="tsupport" columns="answerOsx"/>
+      <exported-key name="questionsAnswerWPen" table="Questionsen" schema="" catalog="tsupport" columns="answerWP"/>
+      <exported-key name="questionsAnswerWebogramen" table="Questionsen" schema="" catalog="tsupport" columns="answerWebogram"/>
+      <index name="answersOSen" unique="false" columns="operatingSystem"/>
+    </table>
+    <table name="Answersit" schema="" catalog="tsupport" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="250" scale="0" nullable="false" jdbcType="12"/>
+      <column name="content" sqlType="VARCHAR" precision="2000" scale="0" nullable="false" jdbcType="12"/>
+      <column name="operatingSystem" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="appVersion" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="answersOSit" columns="operatingSystem" ref-table="OperatingSystems" ref-schema="" ref-catalog="tsupport" ref-columns="operatingSystem" update-rule="0" delete-rule="0" deferrability="2"/>
+      <exported-key name="questionsAnswerAllit" table="Questionsit" schema="" catalog="tsupport" columns="answerAll"/>
+      <exported-key name="questionsAnswerAndroidit" table="Questionsit" schema="" catalog="tsupport" columns="answerAndroid"/>
+      <exported-key name="questionsAnswerDesktopit" table="Questionsit" schema="" catalog="tsupport" columns="answerDesktop"/>
+      <exported-key name="questionsAnswerIosit" table="Questionsit" schema="" catalog="tsupport" columns="answerIos"/>
+      <exported-key name="questionsAnswerOsxit" table="Questionsit" schema="" catalog="tsupport" columns="answerOsx"/>
+      <exported-key name="questionsAnswerWPit" table="Questionsit" schema="" catalog="tsupport" columns="answerWP"/>
+      <exported-key name="questionsAnswerWebogramit" table="Questionsit" schema="" catalog="tsupport" columns="answerWebogram"/>
+      <index name="answersOSit" unique="false" columns="operatingSystem"/>
+    </table>
+    <table name="Answerspt" schema="" catalog="tsupport" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="250" scale="0" nullable="false" jdbcType="12"/>
+      <column name="content" sqlType="VARCHAR" precision="2000" scale="0" nullable="false" jdbcType="12"/>
+      <column name="operatingSystem" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="appVersion" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="answersOSpt" columns="operatingSystem" ref-table="OperatingSystems" ref-schema="" ref-catalog="tsupport" ref-columns="operatingSystem" update-rule="0" delete-rule="0" deferrability="2"/>
+      <exported-key name="questionsAnswerAllpt" table="Questionspt" schema="" catalog="tsupport" columns="answerAll"/>
+      <exported-key name="questionsAnswerAndroidpt" table="Questionspt" schema="" catalog="tsupport" columns="answerAndroid"/>
+      <exported-key name="questionsAnswerDesktoppt" table="Questionspt" schema="" catalog="tsupport" columns="answerDesktop"/>
+      <exported-key name="questionsAnswerIospt" table="Questionspt" schema="" catalog="tsupport" columns="answerIos"/>
+      <exported-key name="questionsAnswerOsxpt" table="Questionspt" schema="" catalog="tsupport" columns="answerOsx"/>
+      <exported-key name="questionsAnswerWPpt" table="Questionspt" schema="" catalog="tsupport" columns="answerWP"/>
+      <exported-key name="questionsAnswerWebogrampt" table="Questionspt" schema="" catalog="tsupport" columns="answerWebogram"/>
+      <index name="answersOSpt" unique="false" columns="operatingSystem"/>
+    </table>
+    <table name="ChatStats" schema="" catalog="tsupport" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="userId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="chatId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="date" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVAoMyk=" version="true"/>
+      <column name="forwarded" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <column name="type" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="chatsStatsChatId" columns="chatId" ref-table="Chats" ref-schema="" ref-catalog="tsupport" ref-columns="chatId" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="chatsStatsUserId" columns="userId" ref-table="Users" ref-schema="" ref-catalog="tsupport" ref-columns="userId" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="chatsStatsChatId" unique="false" columns="chatId"/>
+      <index name="chatsStatsUserId" unique="false" columns="userId"/>
+    </table>
+    <table name="Chats" schema="" catalog="tsupport" type="TABLE">
+      <column name="chatId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="title" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="chatId"/>
+      <exported-key name="chatsStatsChatId" table="ChatStats" schema="" catalog="tsupport" columns="chatId"/>
+    </table>
+    <table name="Countries" schema="" catalog="tsupport" type="TABLE">
+      <column name="countryCode" sqlType="VARCHAR" precision="6" scale="0" nullable="false" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="countryCode"/>
+      <exported-key name="usersCountryCode" table="Users" schema="" catalog="tsupport" columns="countryCode"/>
+    </table>
+    <table name="Filters" schema="" catalog="tsupport" type="TABLE">
+      <column name="filterId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="words" sqlType="VARCHAR" precision="300" scale="0" nullable="false" jdbcType="12"/>
+      <column name="languageCode" sqlType="VARCHAR" precision="6" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="filterId"/>
+      <foreign-key name="filtersLanguageCode" columns="languageCode" ref-table="Languages" ref-schema="" ref-catalog="tsupport" ref-columns="languageCode" update-rule="0" delete-rule="0" deferrability="2"/>
+      <exported-key name="messageDiscardedFilterId" table="MessagesDiscarded" schema="" catalog="tsupport" columns="filterId"/>
+      <index name="filtersLanguageCode" unique="false" columns="languageCode"/>
+    </table>
+    <table name="History" schema="" catalog="tsupport" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="userId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="botId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="answerId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="languageCode" sqlType="VARCHAR" precision="6" scale="0" nullable="false" jdbcType="12"/>
+      <column name="matchValue" sqlType="FLOAT" precision="12" scale="0" nullable="false" jdbcType="7" def="MA=="/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="historyLanguageCode" columns="languageCode" ref-table="Languages" ref-schema="" ref-catalog="tsupport" ref-columns="languageCode" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="historyUserId" columns="userId" ref-table="Users" ref-schema="" ref-catalog="tsupport" ref-columns="userId" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="historyLanguageCode" unique="false" columns="languageCode"/>
+      <index name="historyUserId" unique="false" columns="userId"/>
+    </table>
+    <table name="Languages" schema="" catalog="tsupport" type="TABLE">
+      <column name="languageCode" sqlType="VARCHAR" precision="6" scale="0" nullable="false" jdbcType="12"/>
+      <column name="languageName" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="languageCode"/>
+      <exported-key name="filtersLanguageCode" table="Filters" schema="" catalog="tsupport" columns="languageCode"/>
+      <exported-key name="historyLanguageCode" table="History" schema="" catalog="tsupport" columns="languageCode"/>
+      <exported-key name="languagespercountry_ibfk_1" table="LanguagesPerCountry" schema="" catalog="tsupport" columns="firstLanguage"/>
+      <exported-key name="languagespercountry_ibfk_2" table="LanguagesPerCountry" schema="" catalog="tsupport" columns="secondLanguage"/>
+    </table>
+    <table name="LanguagesPerCountry" schema="" catalog="tsupport" type="TABLE">
+      <column name="countryCode" sqlType="VARCHAR" precision="6" scale="0" nullable="false" jdbcType="12"/>
+      <column name="firstLanguage" sqlType="VARCHAR" precision="6" scale="0" nullable="false" jdbcType="12"/>
+      <column name="secondLanguage" sqlType="VARCHAR" precision="6" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="countryCode"/>
+      <foreign-key name="languagespercountry_ibfk_1" columns="firstLanguage" ref-table="Languages" ref-schema="" ref-catalog="tsupport" ref-columns="languageCode" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="languagespercountry_ibfk_2" columns="secondLanguage" ref-table="Languages" ref-schema="" ref-catalog="tsupport" ref-columns="languageCode" update-rule="0" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="Logins" schema="" catalog="tsupport" type="TABLE">
+      <column name="username" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="hash" sqlType="VARCHAR" precision="130" scale="0" nullable="false" jdbcType="12"/>
+      <column name="securityLevel" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="username"/>
+    </table>
+    <table name="MessagesAnswered" schema="" catalog="tsupport" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="userId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="answer" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="message" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="matchValue" sqlType="FLOAT" precision="12" scale="0" nullable="false" jdbcType="7"/>
+      <column name="date" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVAoMyk=" version="true"/>
+      <column name="partial" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="messagesAnswerdUserId" columns="userId" ref-table="Users" ref-schema="" ref-catalog="tsupport" ref-columns="userId" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="messagesAnswerdUserId" unique="false" columns="userId"/>
+    </table>
+    <table name="MessagesDiscarded" schema="" catalog="tsupport" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="userId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="filterId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="message" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="date" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVAoMyk=" version="true"/>
+      <column name="partial" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="messageDiscardedFilterId" columns="filterId" ref-table="Filters" ref-schema="" ref-catalog="tsupport" ref-columns="filterId" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="messagesDiscardedUserId" columns="userId" ref-table="Users" ref-schema="" ref-catalog="tsupport" ref-columns="userId" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="messageDiscardedFilterId" unique="false" columns="filterId"/>
+      <index name="messagesDiscardedUserId" unique="false" columns="userId"/>
+    </table>
+    <table name="OperatingSystems" schema="" catalog="tsupport" type="TABLE">
+      <column name="operatingSystem" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="operatingSystem"/>
+      <exported-key name="answersOSen" table="Answersen" schema="" catalog="tsupport" columns="operatingSystem"/>
+      <exported-key name="answersOSit" table="Answersit" schema="" catalog="tsupport" columns="operatingSystem"/>
+      <exported-key name="answersOSpt" table="Answerspt" schema="" catalog="tsupport" columns="operatingSystem"/>
+    </table>
+    <table name="Questionsen" schema="" catalog="tsupport" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="content" sqlType="VARCHAR" precision="300" scale="0" nullable="false" jdbcType="12"/>
+      <column name="languageCode" sqlType="VARCHAR" precision="6" scale="0" nullable="false" jdbcType="12"/>
+      <column name="answerAll" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerIos" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerWebogram" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerAndroid" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerOsx" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerDesktop" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerWP" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="questionsAnswerAllen" columns="answerAll" ref-table="Answersen" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerAndroiden" columns="answerAndroid" ref-table="Answersen" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerDesktopen" columns="answerDesktop" ref-table="Answersen" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerIosen" columns="answerIos" ref-table="Answersen" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerOsxen" columns="answerOsx" ref-table="Answersen" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerWPen" columns="answerWP" ref-table="Answersen" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerWebogramen" columns="answerWebogram" ref-table="Answersen" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="questionsAnswerAllen" unique="false" columns="answerAll"/>
+      <index name="questionsAnswerAndroiden" unique="false" columns="answerAndroid"/>
+      <index name="questionsAnswerDesktopen" unique="false" columns="answerDesktop"/>
+      <index name="questionsAnswerIosen" unique="false" columns="answerIos"/>
+      <index name="questionsAnswerOsxen" unique="false" columns="answerOsx"/>
+      <index name="questionsAnswerWebogramen" unique="false" columns="answerWebogram"/>
+      <index name="questionsAnswerWPen" unique="false" columns="answerWP"/>
+    </table>
+    <table name="Questionsit" schema="" catalog="tsupport" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="content" sqlType="VARCHAR" precision="300" scale="0" nullable="false" jdbcType="12"/>
+      <column name="languageCode" sqlType="VARCHAR" precision="6" scale="0" nullable="false" jdbcType="12"/>
+      <column name="answerAll" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerIos" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerWebogram" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerAndroid" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerOsx" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerDesktop" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerWP" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="questionsAnswerAllit" columns="answerAll" ref-table="Answersit" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerAndroidit" columns="answerAndroid" ref-table="Answersit" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerDesktopit" columns="answerDesktop" ref-table="Answersit" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerIosit" columns="answerIos" ref-table="Answersit" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerOsxit" columns="answerOsx" ref-table="Answersit" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerWPit" columns="answerWP" ref-table="Answersit" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerWebogramit" columns="answerWebogram" ref-table="Answersit" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="questionsAnswerAllit" unique="false" columns="answerAll"/>
+      <index name="questionsAnswerAndroidit" unique="false" columns="answerAndroid"/>
+      <index name="questionsAnswerDesktopit" unique="false" columns="answerDesktop"/>
+      <index name="questionsAnswerIosit" unique="false" columns="answerIos"/>
+      <index name="questionsAnswerOsxit" unique="false" columns="answerOsx"/>
+      <index name="questionsAnswerWebogramit" unique="false" columns="answerWebogram"/>
+      <index name="questionsAnswerWPit" unique="false" columns="answerWP"/>
+    </table>
+    <table name="Questionspt" schema="" catalog="tsupport" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="content" sqlType="VARCHAR" precision="300" scale="0" nullable="false" jdbcType="12"/>
+      <column name="languageCode" sqlType="VARCHAR" precision="6" scale="0" nullable="false" jdbcType="12"/>
+      <column name="answerAll" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerIos" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerWebogram" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerAndroid" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerOsx" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerDesktop" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="answerWP" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="questionsAnswerAllpt" columns="answerAll" ref-table="Answerspt" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerAndroidpt" columns="answerAndroid" ref-table="Answerspt" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerDesktoppt" columns="answerDesktop" ref-table="Answerspt" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerIospt" columns="answerIos" ref-table="Answerspt" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerOsxpt" columns="answerOsx" ref-table="Answerspt" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerWPpt" columns="answerWP" ref-table="Answerspt" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="questionsAnswerWebogrampt" columns="answerWebogram" ref-table="Answerspt" ref-schema="" ref-catalog="tsupport" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="questionsAnswerAllpt" unique="false" columns="answerAll"/>
+      <index name="questionsAnswerAndroidpt" unique="false" columns="answerAndroid"/>
+      <index name="questionsAnswerDesktoppt" unique="false" columns="answerDesktop"/>
+      <index name="questionsAnswerIospt" unique="false" columns="answerIos"/>
+      <index name="questionsAnswerOsxpt" unique="false" columns="answerOsx"/>
+      <index name="questionsAnswerWebogrampt" unique="false" columns="answerWebogram"/>
+      <index name="questionsAnswerWPpt" unique="false" columns="answerWP"/>
+    </table>
+    <table name="Templates" schema="" catalog="tsupport" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="hash" sqlType="VARCHAR" precision="130" scale="0" nullable="false" jdbcType="12"/>
+      <column name="languageCode" sqlType="VARCHAR" precision="8" scale="0" nullable="true" jdbcType="12"/>
+      <column name="content" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="TemplatesFile" schema="" catalog="tsupport" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="hash" sqlType="VARCHAR" precision="130" scale="0" nullable="false" jdbcType="12"/>
+      <column name="date" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="languageCode" sqlType="VARCHAR" precision="8" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="unique_filelanguage" unique="true" columns="hash,languageCode"/>
+    </table>
+    <table name="TemplatesLog" schema="" catalog="tsupport" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="hash" sqlType="VARCHAR" precision="130" scale="0" nullable="false" jdbcType="12"/>
+      <column name="type" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="content" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="Users" schema="" catalog="tsupport" type="TABLE">
+      <column name="userId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="bot" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="needVolunteer" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="phone" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12"/>
+      <column name="firstName" sqlType="VARCHAR" precision="156" scale="0" nullable="true" jdbcType="12"/>
+      <column name="lastName" sqlType="VARCHAR" precision="156" scale="0" nullable="true" jdbcType="12"/>
+      <column name="userName" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="isContact" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="lastAnswer" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="userHash" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12"/>
+      <column name="lastScore" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="hashtag" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12"/>
+      <column name="countryCode" sqlType="VARCHAR" precision="6" scale="0" nullable="true" jdbcType="12"/>
+      <column name="denied" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="customCommand" sqlType="VARCHAR" precision="60" scale="0" nullable="true" jdbcType="12"/>
+      <column name="deleted" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <primary-key name="PRIMARY" columns="userId,bot"/>
+      <foreign-key name="usersCountryCode" columns="countryCode" ref-table="Countries" ref-schema="" ref-catalog="tsupport" ref-columns="countryCode" update-rule="0" delete-rule="0" deferrability="2"/>
+      <exported-key name="chatsStatsUserId" table="ChatStats" schema="" catalog="tsupport" columns="userId"/>
+      <exported-key name="historyUserId" table="History" schema="" catalog="tsupport" columns="userId"/>
+      <exported-key name="messagesAnswerdUserId" table="MessagesAnswered" schema="" catalog="tsupport" columns="userId"/>
+      <exported-key name="messagesDiscardedUserId" table="MessagesDiscarded" schema="" catalog="tsupport" columns="userId"/>
+      <index name="usersCountryCode" unique="false" columns="countryCode"/>
+    </table>
+    <table name="Versions" schema="" catalog="tsupport" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Version" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+    </table>
+  </data-source>
+</component>
