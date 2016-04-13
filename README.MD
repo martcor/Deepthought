@@ -1,4 +1,4 @@
-#  Deepthougtht 
+#  Deepthought 
 
 Telegram Client written in Java to support multiple custom implementations
 
@@ -51,7 +51,7 @@ Create your own stickers with [Clippy](https://telegram.me/clippy)
 If you want more information about Telegram API, you can go [here](https://core.telegram.org/api#telegram-api). And [here](https://core.telegram.org/mtproto) you will find extra information about mtproto.
  
 ## Questions or Suggestions
-Feel free to create issues [here](https://github.com/rubenlagus/Deepthougtht/issues) as you need
+Feel free to create issues [here](https://github.com/rubenlagus/Deepthought/issues) as you need
  
 ## Disclaimer
 
@@ -66,7 +66,7 @@ I know this project still have many things to improve, please be patient or help
  
 ## License 
 
-Find a copy [here](https://github.com/rubenlagus/Deepthougtht/blob/master/LICENSE) 
+Find a copy [here](https://github.com/rubenlagus/Deepthought/blob/master/LICENSE) 
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
