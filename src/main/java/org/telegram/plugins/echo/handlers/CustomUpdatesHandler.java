@@ -70,7 +70,7 @@ public class CustomUpdatesHandler extends DefaultUpdatesHandler {
     @Override
     protected void onTLAbsMessageCustom(TLAbsMessage message) {
         if (message instanceof TLMessage) {
-            BotLogger.debug(LOGTAG, "Received TLMessage with botsupport");
+            BotLogger.debug(LOGTAG, "Received TLMessage");
             onTLMessage((TLMessage) message);
         } else {
             BotLogger.debug(LOGTAG, "Unsupported TLAbsMessage -> " + message.toString());

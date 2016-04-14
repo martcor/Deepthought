@@ -23,7 +23,7 @@ public class BotLogger {
     private static volatile PrintWriter logginFile;
     private static volatile String currentFileName;
     private static final String pathToLogs = "./";
-    private static final Logger logger = Logger.getLogger("Tsupport Bot");
+    private static final Logger logger = Logger.getLogger("Telegram Bot");
     private static volatile LocalDateTime lastFileDate;
     private static LoggerThread loggerThread = new LoggerThread();
     private static final ConcurrentLinkedQueue<String> logsToFile = new ConcurrentLinkedQueue<>();
